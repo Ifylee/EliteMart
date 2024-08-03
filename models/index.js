@@ -13,7 +13,7 @@ Product.belongsTo(Category, {
 
 // Set up the association: a Category has many Products
 Category.hasMany(Product, {
-  foreignKey: 'tag_id' 
+  foreignKey: 'category_id' 
 
 })
 
@@ -27,7 +27,7 @@ Product.belongsToMany(Tag, {
 // Set up the many-to-many association: a Tag belongs to many Products through the ProductTag join table
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: 'product_id'
+  foreignKey: 'tag_id'
 })
 
 // Export the models to make them available for use in other parts of the application

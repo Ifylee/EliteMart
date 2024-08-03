@@ -95,7 +95,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
        // Update the product with the data from the request body
-      const productData = await Category.update(req.body, {
+      const productData = await Product.update(req.body, {
         where: {
           id: req.params.id,
         },
