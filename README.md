@@ -12,7 +12,7 @@ It is built with the latest web technologies, this application offers a robust s
 - [License](#license)
 - [Contributing](#contributing)
 - [Questions](#questions)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Installation
