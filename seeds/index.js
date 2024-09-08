@@ -31,3 +31,38 @@ const seedAll = async () => {
 
 // Call the seedAll function to start the seeding process
 seedAll();
+
+
+// // Import models
+// const { Category, Product, Tag, ProductTag } = require('../models');
+// const sequelize = require('../config/connection');
+
+// // Define an async function to sync all models
+// const syncModels = async () => {
+//   try {
+//     // Sync all models
+//     await sequelize.sync({ force: true }); // This drops and recreates tables
+//     console.log('Database synced');
+
+//     // Now you can seed data
+//     await require('./category-seeds')();
+//     console.log('Categories seeded');
+
+//     await require('./product-seeds')();
+//     console.log('Products seeded');
+
+//     await require('./tag-seeds')();
+//     console.log('Tags seeded');
+
+//     await require('./product-tag-seeds')();
+//     console.log('Product Tags seeded');
+
+//     process.exit(0);
+//   } catch (error) {
+//     console.error('Error syncing database:', error);
+//     process.exit(1);
+//   }
+// };
+
+// // Call the function to start the syncing process
+// syncModels();

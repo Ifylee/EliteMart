@@ -20,14 +20,15 @@ Category.hasMany(Product, {
 // Set up the many-to-many association: a Product belongs to many Tags through the ProductTag join table
 Product.belongsToMany(Tag, {
   through: ProductTag, // Use the ProductTag table to establish the many-to-many relationship
-  foreignKey: 'product_id' // Specify the foreign key in the ProductTag table that references the Product table
-
+  foreignKey: 'product_id', // Specify the foreign key in the ProductTag table that references the Product table
+  as: 'tags'
 })
 
 // Set up the many-to-many association: a Tag belongs to many Products through the ProductTag join table
-Product.belongsToMany(Tag, {
+Product.belongsToMany(Product, {
   through: ProductTag,
-  foreignKey: 'tag_id'
+  foreignKey: 'tag_id',
+  as: 'products'
 })
 
 // Export the models to make them available for use in other parts of the application

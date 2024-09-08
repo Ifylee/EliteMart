@@ -1,6 +1,8 @@
 
--- Drop the database named 'ecommerce_db' if it already exists
-DROP DATABASE IF EXISTS ecommerce_db;
+-- Drop the database named 'elitemart_db' if it already exists
+DROP DATABASE IF EXISTS elitemart_db;
 
--- Create a new database named 'ecommerce_db'
-CREATE DATABASE ecommerce_db;
+-- Create a new database named 'elitemart_db'
+CREATE DATABASE elitemart_db;
+
+c\elitemart_db;
